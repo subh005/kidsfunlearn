@@ -1,0 +1,44 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Vehicles</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">Vehicles</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='vechiles/vehicles.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showVehicles()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='vechiles/vehicles.svg'>"; 
+}
+	function showVehicles(){
+		var myTeam = new Array("<img src='vechiles/taxi.png'><br>Taxi","<img src='vechiles/van.png'><br>Van","<img src='vechiles/policecar.png'><br>Police car","<img src='vechiles/bus.png'><br>Bus","<img src='vechiles/ambulance.png'><br>Ambulance","<img src='vechiles/skateboard.png'><br>Skateboard","<img src='vechiles/bicycle.png'><br>Bicycle","<img src='vechiles/mountainbike.png'><br>Mountain bike","<img src='vechiles/scooter.png'><br>Scooter","<img src='vechiles/motorcycle.png'><br>Motorcycle","<img src='vechiles/fireengine.png'><br>Fire Engine","<img src='vechiles/crane.png'><br>Crane","<img src='vechiles/forklift.png'><br>Forklift","<img src='vechiles/tractor.png'><br>Tractor","<img src='vechiles/garbagetruck.png'><br>Garbage truck","<img src='vechiles/cementmixer.png'><br>Cement Mixer","<img src='vechiles/dumptruck.png'><br>Dump Truck","<img src='vechiles/subway.png'><br>Subway","<img src='vechiles/helicopter.png'><br>Helicopter","<img src='vechiles/airplane.png'><br>Airplane","<img src='vechiles/balloon.png'><br>Balloon","<img src='vechiles/tram.png'><br>Tram","<img src='vechiles/carriage.png'><br>Carriage","<img src='vechiles/rowboat.png'><br>Rowboat","<img src='vechiles/cruise.png'><br>Cruise","<img src='vechiles/train.png'><br>Train","The End");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+
+
+
+	</script>
+</body>
+</html>
+

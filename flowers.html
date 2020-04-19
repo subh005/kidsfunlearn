@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Flowers</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">FLOWERS</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='flowers/flowers.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showFlowers()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='flowers/flowers.svg'>"; 
+}
+
+	function showFlowers(){
+	var myTeam = new Array("<img src='flowers/tulip.png'><br>Tulip","<img src='flowers/daffodil.png'><br>Daffodil","<img src='flowers/poppy.png'><br>Poppy","<img src='flowers/sunflower.svg'><br>Sunflower","<img src='flowers/rose.png'><br>Rose","<img src='flowers/orchid.png'><br>Orchid","<img src='flowers/iris.png'><br>Iris","<img src='flowers/peony.png'><br>Peony","<img src='flowers/lily.svg'><br>Lily","<img src='flowers/lotus.png'><br>Lotus","<img src='flowers/dandelion.png'><br>Dandelion","<img src='flowers/daisy.png'><br>Daisy","<img src='flowers/crocus.png'><br>Crocus","The End");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+
+
+
+	</script>
+</body>
+</html>
+

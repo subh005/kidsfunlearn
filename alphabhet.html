@@ -1,0 +1,42 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Alphabets</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">ALPHABETS</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='alphabets/alphabet.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showAlphabhet()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='alphabets/alphabet.svg'>"; 
+}
+
+	function showAlphabhet(){
+		var myTeam = new Array("<img src='alphabets/apple.svg'><br>A","<img src='alphabets/banana.svg'><br>B","<img src='alphabets/cat.svg'><br>C","<img src='alphabets/dog.svg'><br>D","<img src='alphabets/elephant.svg'><br>E","<img src='alphabets/flowers.svg'><br>F","<img src='alphabets/grape.svg'><br>G","<img src='alphabets/hen.svg'><br>H","<img src='alphabets/ice-cream.svg'><br>I","<img src='alphabets/jam.svg'><br>J","<img src='alphabets/kite.svg'><br>K","<img src='alphabets/lock.svg'><br>L","<img src='alphabets/mat.svg'><br>M","<img src='alphabets/nest.svg'><br>N","<img src='alphabets/owl.jpg'><br>O","<img src='alphabets/parrot.svg'><br>P","<img src='alphabets/queen.svg'><br>Q","<img src='alphabets/rose.png'><br>R","<img src='alphabets/swan.jpg'><br>S","<img src='alphabets/tent.svg'><br>T","<img src='alphabets/umbrella.svg'><br>U","<img src='alphabets/van.png'><br>V","<img src='alphabets/water.svg'><br>W","<img src='alphabets/xtree.svg'><br>X","<img src='alphabets/yawning.svg'><br>Y","<img src='alphabets/zebra.png'><br>Z");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+	if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+	</script>
+</body>
+</html>
+

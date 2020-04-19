@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Animals</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">ANIMALS</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='animals/monkey.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showAnimals()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='animals/monkey.svg'>"; 
+}
+
+	function showAnimals(){
+		var myTeam = new Array("<img src='animals/monkey.svg'><br>Monkey","<img src='animals/dog.svg'><br>Dog","<img src='animals/panda.png'><br>Panda","<img src='animals/cat.svg'><br>Cat","<img src='animals/cow.svg'><br>Cow","<img src='animals/zebra.png'><br>Zebra","<img src='animals/gorilla.png'><br>Gorilla","<img src='animals/leopard.svg'><br>Leopard","<img src='animals/wolf.png'><br>Wolf","<img src='animals/giraffe.png'><br>Giraffe","<img src='animals/camel.png'><br>Camel","<img src='animals/koala.png'><br>Koala","<img src='animals/alligator.png'><br>Alligator","<img src='animals/tiger.svg'><br>Tiger","<img src='animals/bear.svg'><br>Bear","<img src='animals/chimpanzee.svg'><br>Chimpanzee","<img src='animals/sheep.svg'><br>Sheep","<img src='animals/raccoon.svg'><br>Raccoon","<img src='animals/goat.svg'><br>Goat","<img src='animals/lion.svg'><br>Lion","<img src='animals/elephant.svg'><br>Elephant","<img src='animals/snake.svg'><br>Snake","<img src='animals/squirrel.svg'><br>Squirrel","<img src='animals/kangaroo.svg'><br>Kangaroo","<img src='animals/hippopotamus.svg'><br>Hippopotamus","<img src='animals/rabbit.png'><br>Rabbit","<img src='animals/fox.svg'><br>Fox","<img src='animals/gorilla.png'><br>Gorilla","<img src='animals/bat.svg'><br>Bat","<img src='animals/hare.svg'><br>Hare","<img src='animals/frog.png'><br>Frog","<img src='animals/deer.png'><br>Deer","<img src='animals/rat.png'><br>Rat","<img src='animals/lizard.svg'><br>Lizard","<img src='animals/reindeer.png'><br>Reindeer","The End");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+
+
+
+	</script>
+</body>
+</html>
+

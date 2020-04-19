@@ -1,0 +1,42 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Water Animals</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="theme-color" contains="#FF8F00">
+</head>
+<body>
+	<div class="container">
+<div class="header">WATER ANIMALS </div>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='wateranimals/dolphin.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showWaterAnimals()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='wateranimals/dolphin.svg'>"; 
+}
+
+	function showWaterAnimals(){
+	var myTeam = new Array("<img src='wateranimals/crab.png'><br>Crab","<img src='wateranimals/fishes.png'><br>Fish","<img src='wateranimals/seal.png'><br>Seal","<img src='wateranimals/octopus.png'><br>Octopus","<img src='wateranimals/shark.png'><br>Shark","<img src='wateranimals/seahorse.png'><br>Seahorse","<img src='wateranimals/walrus.png'><br>Walrus","<img src='wateranimals/starfish.png'><br>Starfish","<img src='wateranimals/whale.png'><br>Whale","<img src='wateranimals/penguin.png'><br>Penguin","<img src='wateranimals/jellyfish.png'><br>Jellyfish","<img src='wateranimals/squid.png'><br>Squid","<img src='wateranimals/lobster.png'><br>Lobster","<img src='wateranimals/shrimp.png'><br>Shrimp","<img src='wateranimals/otter.png'><br>Otter","<img src='wateranimals/oyster.png'><br>Oyster","<img src='wateranimals/seagull.png'><br>Seagull","<img src='wateranimals/dolphin.png'><br>Dolphin","<img src='wateranimals/turtle.svg'><br>Turtle","<img src='wateranimals/shells.png'><br>Shells","<img src='wateranimals/seaturtle.png'><br>Sea Turtle","<img src='wateranimals/seaurchin.png'><br>Seaurchin","<img src='wateranimals/sealion.png'><br>Sea lion","The End");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+	</script>
+</body>
+</html>
+

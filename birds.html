@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Birds</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">Birds</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='birds/bird.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showBirds()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='birds/bird.svg'>"; 
+}
+
+	function showBirds(){
+		var myTeam = new Array("<img src='birds/peacock.jpg'><br>Peacock","<img src='birds/crow.jpg'><br>Crow","<img src='birds/dove.png'><br>Dove","<img src='birds/sparrow.svg'><br>Sparrow","<img src='birds/goose.jpg'><br>Goose","<img src='birds/duck.svg'><br>Duck","<img src='birds/pigeon.svg'><br>Pigeon","<img src='birds/turkey.png'><br>Turkey","<img src='birds/hawk.png'><br>Hawk","<img src='birds/eagle.svg'><br>Eagle","<img src='birds/raven.png'><br>Raven","<img src='birds/parrot.svg'><br>Parrot","<img src='birds/flamingo.png'><br>Flamingo","<img src='birds/seagull.png'><br>Seagull","<img src='birds/ostrich.jpg'><br>Ostrich","<img src='birds/swallow.png'><br>Swallow","<img src='birds/penguin.png'><br>Penguin","<img src='birds/blackbird.png'><br>Blackbird","<img src='birds/robin.svg'><br>Robin","<img src='birds/swan.jpg'><br>Swan","<img src='birds/owl.jpg'><br>Owl","<img src='birds/woodpecker.png'><br>Woodpecker","The End");
+	document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+
+
+
+	</script>
+</body>
+</html>
+

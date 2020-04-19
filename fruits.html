@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Fruits</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">FRUITS</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='fruits/fruits.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showFruits()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='fruits/fruits.svg'>"; 
+}
+
+	function showFruits(){
+				var myTeam = new Array("<img src='fruits/apples.png'><br>Apples","<img src='fruits/watermelon.png'><br>Watermelon","<img src='fruits/orange.svg'><br>Orange","<img src='fruits/pear.png'><br>Pear","<img src='fruits/cherry.png'><br>Cherry","<img src='fruits/strawberry.png'><br>Strawberry","<img src='fruits/grapes.png'><br>Grape","<img src='fruits/mango.svg'><br>Mango","<img src='fruits/blueberries.png'><br>Blueberry","<img src='fruits/pomegranate.svg'><br>Pomegranate","<img src='fruits/plum.png'><br>Plum","<img src='fruits/banana.png'><br>Banana","<img src='fruits/raspberries.png'><br>Raspberry","<img src='fruits/mandarin.png'><br>Mandarin","<img src='fruits/jackfruit.png'><br>Jackfruit","<img src='fruits/papaya.svg'><br>Papaya","<img src='fruits/kiwi.png'><br>Kiwi","<img src='fruits/pineapple.png'><br>Pineapple","<img src='fruits/lime.png'><br>Lime","<img src='fruits/lemon.png'><br>Lemon","<img src='fruits/apricot.png'><br>Apricot","<img src='fruits/grapefruit.svg'><br>Grapefruit","<img src='fruits/melon.png'><br>Melon","<img src='fruits/coconut.png'><br>Coconut","<img src='fruits/avocado.png'><br>Avocado","<img src='fruits/peach.png'><br>Peach","The End");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+	</script>
+</body>
+</html>
+

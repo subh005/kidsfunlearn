@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Shapes</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#FF8F00">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+<a href="index.html"><div class="header">SHAPES</div></a>
+<div class="category-body">
+	<div class="card">
+		<div id="showTeam" class="category-team"><img src='shapes/shapes.svg'></div>
+	</div>	
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showShapes()">Next</div>
+<div class="reset" onclick="reset()">Reset</div>
+<script type="text/javascript">
+	var i = 0;
+function reset(){
+i=0;
+document.getElementById("showTeam").innerHTML = "<img src='shapes/shapes.svg'>"; 
+}
+
+	function showShapes(){
+		var myTeam = new Array("<img src='shapes/square.png'><br>Square","<img src='shapes/circle.png'><br>Circle","<img src='shapes/nonagon.png'><br>Nonagon","<img src='shapes/octagon.png'><br>Octagon","<img src='shapes/heptagon.png'><br>Heptagon","<img src='shapes/hexagon.png'><br>Hexagon","<img src='shapes/triangle.png'><br>Triangle","<img src='shapes/parallelogram.png'><br>Parallelogram","<img src='shapes/rhombus.png'><br>Rhombus","<img src='shapes/heart.png'><br>Heart","<img src='shapes/pentagon.png'><br>Pentagon","<img src='shapes/cross.png'><br>Cross","<img src='shapes/oval.png'><br>Oval","<img src='shapes/arrow.png'><br>Arrow","<img src='shapes/cube.png'><br>Cube","<img src='shapes/cylinder.png'><br>Cylinder","<img src='shapes/star.png'><br>Star","<img src='shapes/crescent.png'><br>Crescent","The End");
+		document.getElementById("showTeam").innerHTML = myTeam[i]; 
+		if(i == myTeam.length - 1){
+			i =0;
+		} else{i = i+1;	}
+		
+
+	}
+
+
+
+
+	</script>
+</body>
+</html>
+
